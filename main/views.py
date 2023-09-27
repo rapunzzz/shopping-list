@@ -21,7 +21,7 @@ def show_main(request):
     products = Product.objects.filter(user=request.user)
     context = {
         'name': request.user.username,
-        'class': 'PBP A',
+        'class': 'PBP F',
         'products' : products,
         'last_login': request.COOKIES['last_login'],
     }
